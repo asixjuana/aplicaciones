@@ -1,0 +1,27 @@
+git init crea una carpeta oculta en el repositorio .git
+git init nombre_carpeta crea una carpeta en el directorio dónde estás ubicado con una carpeta oculta .git
+git config --global user.name nombre_usuario_github
+git config --global user.email email_github
+git config --list comprueba si se ha creado ver
+git status muestra el estado de los archivos. Si salen rojos están en local, en verde están en la nube de github
+git add "nombre_fichero"
+git add nombre_carpeta
+git add . añade todos los archivos del repositorio
+git commit -m "comentario de commit" 
+git commit --amend -m "cambiar el nombre del ultimo commit"
+git commit -a -m " añadir commit y actualizar repositorio en la nube directamente sin pasar por el temporal" no subirá los archivos nuevos desde el último commit, solo los que ya estaban
+git status muestra información sobre el estado de los archivos
+git log muestra los commits que se han hecho
+git log --oneline muestra los commits mostrandolos en una linea cada uno
+git log --graph muestra un esquema gráfico de los commits y las ramas
+git diff --cached diferencia entre lo que has hecho y lo que tienes en el repositorio
+Si guardamos un cambio y hacemos un git add, los cambios se quedan en la zona 2 (en rojo)
+
+
+
+
+
+
+
+
+
