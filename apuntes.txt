@@ -16,6 +16,44 @@ git log --oneline muestra los commits mostrandolos en una linea cada uno
 git log --graph muestra un esquema gráfico de los commits y las ramas
 git diff --cached diferencia entre lo que has hecho y lo que tienes en el repositorio
 Si guardamos un cambio y hacemos un git add, los cambios se quedan en la zona 2 (en rojo)
+git show muestra todos los cambios que se han hecho durante la sesión actual
+git diff head muestra la diferencia entre el estado dos y tres
+git diff head~75285de45ae9c665d92f22cb5d176de5c34e3078 -- nombre 
+git checkout "commit" "fichero"
+******************RAMAS***********************
+Las ramas se utilizan para trabajar en un proyecto sin tocar el proyecto
+git branch muestra las ramas *rama en la que estás
+git branch juana crea una rama llamada juana
+git checkout Juana posiciona en la rama
+podemos hacer cambios en esta rama que no afecten a la master
+para incluir los cambios que has hecho en Juana a master
+git merge juana desde la rama a la que quieres incorporar los cambios
+git checkout -b nombre_rama crea la rama y te ubica en ella
+*****borrar una rama*****
+git branch -d Juana permite borrar la rama si has hecho un merge
+git branch -D Juana permite borrar siempre
+*****borrar un commit******
+git reset -hard commit nombre_commit borra todos los commits y lo que no has comiteado aún
+git reset commit nombre_commit borra los commits desde el que eliges y los que vienen detrás
+******trabajo en remoto*****
+git remote add "url del repositorio"
+git remote muestra la lista de las url de nuestros repositorios
+git remote -v muestra la misma lista pero tambien con las url
+creamos un repositorio en github
+git remote add origin <url del repositorio remoto>
+git push -u origin master
+git pull actualiza el repositorio local
+git push actualiza el repositorio remote
+git fetch nombre del repositorio remoto y/o rama
+
+
+
+
+
+
+
+
+
 
 
 
